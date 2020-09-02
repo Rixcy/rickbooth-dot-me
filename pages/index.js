@@ -7,7 +7,7 @@ export default function Home() {
                 <title>Create Next App</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <article className="prose lg:prose-xl">
+            <article className="prose lg:prose-xl mt-10">
                 <h1>Garlic bread with cheese: What the science tells us</h1>
                 <p>
                     For years parents have espoused the health benefits of eating garlic bread with
