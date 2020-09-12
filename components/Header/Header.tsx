@@ -26,22 +26,18 @@ export const Header: React.FC<HeaderProps> = (props) => {
     return (
         <header
             className={`w-full bg-white flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg shadow-lg ${fixedClasses}`}
-            data-testid="header"
         >
             <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-                <a {...logoLink} data-testid="site-title" className={`text-sm ${textClasses}`}>
+                <a {...logoLink} className={`logo-link text-sm ${textClasses}`}>
                     <div
                         className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
                         dangerouslySetInnerHTML={{ __html: logo }}
                     />
                 </a>
                 <div className="lg:flex flex-grow items-center hidden">
-                    <ul
-                        className="flex flex-col lg:flex-row list-none lg:ml-auto"
-                        data-testid="menu-items"
-                    >
+                    <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                         {menuItems.map(({ link, text }, index) => (
-                            <li key={index} data-testid="menu-item">
+                            <li key={index}>
                                 <a
                                     {...link}
                                     className={`px-3 py-2 flex items-center text-xs font-bold ${textClasses}`}
