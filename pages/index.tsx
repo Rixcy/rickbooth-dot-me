@@ -12,7 +12,7 @@ const Home = ({ doc }: HomeProps) => {
     const { meta_description, meta_title, meta_keywords, hero_title } = doc.data
     console.log('props:', doc.data)
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-32">
             <Head>
                 <title>{meta_title ? RichText.asText(meta_title) : 'rickboothdotme'}</title>
                 {meta_description && (
