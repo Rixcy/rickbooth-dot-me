@@ -29,7 +29,7 @@ export type ButtonVariant =
     | 'yellow'
 
 export const Button: React.FC<ButtonProps> = (props) => {
-    const { rounded, variant, outline, size, uppercase, children, ...restProps } = props
+    const { rounded, variant, outline, size, uppercase, children, className, ...restProps } = props
 
     const buttonClasses = classNames(
         'text-white',
@@ -55,7 +55,12 @@ export const Button: React.FC<ButtonProps> = (props) => {
     )
 
     return (
-        <button className={buttonClasses} style={{ transition: 'all .15s ease 0s' }} {...restProps}>
+        <button
+            type="button"
+            className={`${className} ${buttonClasses}`}
+            style={{ transition: 'all .15s ease 0s' }}
+            {...restProps}
+        >
             {children}
         </button>
     )
