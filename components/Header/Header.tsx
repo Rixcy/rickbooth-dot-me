@@ -1,19 +1,13 @@
 import React from 'react'
 
-type link = {
-    href: string
-    onClick?: (e: React.MouseEvent<HTMLElement>) => void
-}
-
 export type HeaderProps = {
     logo: string
-    jeff?: { href: string; onClick: () => any }
-    logoLink?: link
+    logoLink?: React.AnchorHTMLAttributes<HTMLAnchorElement>
     /** whether or not the header should be fixed */
     fixed?: boolean
     menuItems: {
         text: string
-        link: link
+        link: React.AnchorHTMLAttributes<HTMLAnchorElement>
     }[]
 }
 

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato&display=swap');
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -15,3 +14,6 @@ h5,
 h6 {
     font-family: 'Arvo', sans-serif;
 }
+
+@tailwind utilities;
+

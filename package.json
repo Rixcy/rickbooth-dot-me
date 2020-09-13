@@ -44,6 +44,7 @@
         "@storybook/addons": "^6.0.21",
         "@storybook/react": "^6.0.21",
         "@tailwindcss/typography": "^0.2.0",
+        "@types/classnames": "^2.2.10",
         "@types/node": "^14.6.3",
         "@types/react": "^16.9.49",
         "@typescript-eslint/eslint-plugin": "^4.0.1",
@@ -51,6 +52,7 @@
         "autoprefixer": "^9.8.6",
         "babel-loader": "^8.1.0",
         "chromatic": "^5.1.0",
+        "classnames": "^2.2.6",
         "commitizen": "^4.2.1",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^7.8.1",
@@ -61,7 +63,7 @@
         "lint-staged": "^10.2.13",
         "prettier": "^2.1.1",
         "sort-package-json": "^1.44.0",
-        "tailwindcss": "^1.7.6",
+        "tailwindcss": "^1.8.7",
         "typescript": "^4.0.2"
     }
 }
