@@ -9,7 +9,6 @@ export type HeroProps = {
 
 export const Hero: React.FC<HeroProps> = (props) => {
     const { title, introText, buttons } = props
-    console.log(buttons)
     return (
         <section className="hero relative pt-16 items-center flex h-screen">
             <div className="container mx-auto items-center flex flex-wrap">

@@ -1,32 +1,21 @@
 import React from 'react'
 import classNames from 'classnames'
+import { ColourVariant } from '../../@types/variants'
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     /** whether or not the button should be a rounded variant or not */
     rounded?: boolean
-    /** choose a variant for the button, possible colours are: blue, gray, green, indigo, orange, pink, purple, red, teal or yellow */
-    variant?: ButtonVariant
+    /** choose a variant for the button */
+    variant?: ColourVariant
     /** whether or not to use the outline variant of the button */
     outline?: boolean
-    /** size of the button, options are: `sm`, `md` or `lg` */
+    /** size of the button */
     size?: ButtonSizes
     /** whether or not the text inside the button should be uppercase, default is true */
     uppercase?: boolean
 }
 
 export type ButtonSizes = 'sm' | 'md' | 'lg'
-
-export type ButtonVariant =
-    | 'blue'
-    | 'gray'
-    | 'green'
-    | 'indigo'
-    | 'orange'
-    | 'pink'
-    | 'purple'
-    | 'red'
-    | 'teal'
-    | 'yellow'
 
 export const Button: React.FC<ButtonProps> = (props) => {
     const { rounded, variant, outline, size, uppercase, children, className, ...restProps } = props
