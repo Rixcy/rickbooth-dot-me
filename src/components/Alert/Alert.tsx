@@ -1,5 +1,5 @@
 import React from 'react'
-import { ColourVariant } from '../../@types/variants'
+import { ColourVariant } from '../../utils'
 import { FaCheckCircle, FaExclamationTriangle, FaTimesCircle } from 'react-icons/fa'
 
 type AlertIcon = 'success' | 'warning' | 'error'

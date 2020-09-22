@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
-import { ColourVariant } from '../../@types/variants'
+import { ColourVariant } from '../../utils'
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     /** whether or not the button should be a rounded variant or not */
