@@ -13,14 +13,14 @@
     "author": "Rick Booth <admin@rickbooth.me>",
     "scripts": {
         "build": "next build",
+        "build-storybook": "build-storybook --docs",
+        "chromatic": "npx chromatic",
         "commit": "git-cz",
         "dev": "next dev",
         "lint": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
         "sort": "sort-package-json",
         "start": "next start",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook",
-        "chromatic": "npx chromatic"
+        "storybook": "start-storybook -p 6006"
     },
     "config": {
         "commitizen": {
@@ -45,11 +45,12 @@
         "@babel/core": "^7.11.5",
         "@commitlint/cli": "^9.1.2",
         "@commitlint/config-conventional": "^9.1.2",
-        "@storybook/addon-actions": "^6.0.21",
-        "@storybook/addon-essentials": "^6.0.21",
-        "@storybook/addon-links": "^6.0.21",
-        "@storybook/addons": "^6.0.21",
-        "@storybook/react": "^6.0.21",
+        "@storybook/addon-actions": "^6.0.22",
+        "@storybook/addon-essentials": "^6.0.22",
+        "@storybook/addon-links": "^6.0.22",
+        "@storybook/addons": "^6.0.22",
+        "@storybook/react": "^6.0.22",
+        "@storybook/theming": "^6.0.22",
         "@tailwindcss/typography": "^0.2.0",
         "@types/classnames": "^2.2.10",
         "@types/lodash": "^4.14.161",
